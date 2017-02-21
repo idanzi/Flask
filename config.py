@@ -1,9 +1,9 @@
 class Config(object):
-    pass
+    SECRET_KEY = 'DSJFAKL23432UIJDSKLFJADLS'
 
 
 class ProdConfig(Config):
-    pass
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:xixi20080608@localhost:3306/lishiwenhua"
 
 
 class DevConfig(Config):
